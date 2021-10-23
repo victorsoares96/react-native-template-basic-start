@@ -1,7 +1,11 @@
-import React, { ComponentType } from 'react';
+import React, { ComponentType, ReactNode } from 'react';
 import { render as rtlRender } from '@testing-library/react-native';
 import { createStackNavigator } from '@react-navigation/stack';
 import { NavigationContainer } from '@react-navigation/native';
+import { configureStore } from '@reduxjs/toolkit';
+
+import { Provider } from 'react-redux';
+import { appReducer } from '../redux/store';
 
 function render(ui: any, { ...options } = {}) {
   // @ts-ignore
@@ -29,3 +33,14 @@ export const renderWithNavigation = ({
       </Stack.Navigator>
     </NavigationContainer>,
   );
+
+export function RenderWithRedux(component: ReactNode, options: any = {}) {
+  const { initialState } = options;
+
+  const store = configureStore({
+    reducer: appReducer,
+    preloadedState: { ...initialState },
+  });
+
+  return <Provider store={store}>{component}</Provider>;
+}
