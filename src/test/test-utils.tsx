@@ -1,23 +1,19 @@
-import React, {ComponentType} from 'react'
-import {render as rtlRender} from '@testing-library/react-native'
-import {ThemeProvider} from '../utils/theme'
-import {createStackNavigator} from '@react-navigation/stack'
-import {NavigationContainer} from '@react-navigation/native'
+import React, { ComponentType } from 'react';
+import { render as rtlRender } from '@testing-library/react-native';
+import { createStackNavigator } from '@react-navigation/stack';
+import { NavigationContainer } from '@react-navigation/native';
 
-function render(ui: any, {theme = 'light', ...options} = {}) {
+function render(ui: any, { ...options } = {}) {
   // @ts-ignore
-  const Wrapper = ({children}): ComponentType => (
-    <ThemeProvider initialTheme={theme}>{children}</ThemeProvider>
-  )
-  // @ts-ignore
-  return rtlRender(ui, {wrapper: Wrapper, ...options})
+  const Wrapper: React.FC = ({ children }): ComponentType => <>{children}</>;
+  return rtlRender(ui, { wrapper: Wrapper, ...options });
 }
 
-export * from '@testing-library/react-native'
+export * from '@testing-library/react-native';
 // override React Testing Library's render with our own
-export {render}
+export { render };
 
-const Stack = createStackNavigator()
+const Stack = createStackNavigator();
 
 export const renderWithNavigation = ({
   screens = {},
@@ -32,4 +28,4 @@ export const renderWithNavigation = ({
         ))}
       </Stack.Navigator>
     </NavigationContainer>,
-  )
+  );
