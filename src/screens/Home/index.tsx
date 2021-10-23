@@ -8,7 +8,7 @@ import { styles } from './styles';
 export const Home: React.FC = () => {
   return (
     <SafeAreaView style={styles.container}>
-      <Text>Welcome to Home Screen!</Text>
+      <Text style={styles.text}>Welcome to Home Screen!</Text>
       <HelloWorld />
     </SafeAreaView>
   );
