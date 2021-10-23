@@ -11,7 +11,10 @@ const Stack = createStackNavigator();
 
 export const Routes: React.FC = () => (
   <NavigationContainer>
-    <Stack.Navigator initialRouteName={EScreens.Home}>
+    <Stack.Navigator
+      initialRouteName={EScreens.Home}
+      screenOptions={{ headerShown: false }}
+    >
       <Stack.Screen name={EScreens.Home} component={Home} />
     </Stack.Navigator>
   </NavigationContainer>
