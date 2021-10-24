@@ -7,7 +7,11 @@ import { EScreens } from '../utils/enums/e-screens';
 
 import { Home } from '../screens';
 
-const Stack = createStackNavigator();
+export type RootStackParamList = {
+  [EScreens.Home]: undefined;
+};
+
+const Stack = createStackNavigator<RootStackParamList>();
 
 export const Routes: React.FC = () => (
   <NavigationContainer>
