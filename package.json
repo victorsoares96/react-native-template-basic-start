@@ -1,6 +1,6 @@
 {
-  "name": "react-native-template-victor-basic-start",
-  "version": "1.0.0",
+  "name": "react-native-template-basic-start",
+  "version": "0.0.1",
   "scripts": {
     "android": "react-native run-android",
     "android-clean": "scripts/clean_android.sh",

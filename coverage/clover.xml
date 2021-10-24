@@ -1,0 +1,204 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<coverage generated="1635094111911" clover="3.2.0">
+  <project timestamp="1635094111912" name="All files">
+    <metrics statements="87" coveredstatements="81" conditionals="10" coveredconditionals="5" methods="41" coveredmethods="37" elements="138" coveredelements="123" complexity="0" loc="87" ncloc="87" packages="14" files="23" classes="23"/>
+    <package name="react-native-testing">
+      <metrics statements="3" coveredstatements="2" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="0"/>
+      <file name="assetsTransformer.js" path="/Users/victorsoares/Documents/github/pessoal/react-native-testing/assetsTransformer.js">
+        <metrics statements="3" coveredstatements="2" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="0"/>
+        <line num="1" count="4" type="stmt"/>
+        <line num="3" count="4" type="stmt"/>
+        <line num="5" count="0" type="stmt"/>
+      </file>
+    </package>
+    <package name="react-native-testing.src.assets.fonts">
+      <metrics statements="0" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
+      <file name="index.ts" path="/Users/victorsoares/Documents/github/pessoal/react-native-testing/src/assets/fonts/index.ts">
+        <metrics statements="0" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
+      </file>
+    </package>
+    <package name="react-native-testing.src.assets.fonts.Montserrat">
+      <metrics statements="1" coveredstatements="1" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
+      <file name="index.ts" path="/Users/victorsoares/Documents/github/pessoal/react-native-testing/src/assets/fonts/Montserrat/index.ts">
+        <metrics statements="1" coveredstatements="1" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
+        <line num="1" count="4" type="stmt"/>
+      </file>
+    </package>
+    <package name="react-native-testing.src.components">
+      <metrics statements="0" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
+      <file name="index.ts" path="/Users/victorsoares/Documents/github/pessoal/react-native-testing/src/components/index.ts">
+        <metrics statements="0" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
+      </file>
+    </package>
+    <package name="react-native-testing.src.components.Counter">
+      <metrics statements="17" coveredstatements="17" conditionals="2" coveredconditionals="2" methods="10" coveredmethods="10"/>
+      <file name="index.tsx" path="/Users/victorsoares/Documents/github/pessoal/react-native-testing/src/components/Counter/index.tsx">
+        <metrics statements="8" coveredstatements="8" conditionals="2" coveredconditionals="2" methods="6" coveredmethods="6"/>
+        <line num="12" count="2" type="stmt"/>
+        <line num="13" count="15" type="stmt"/>
+        <line num="14" count="14" type="stmt"/>
+        <line num="15" count="10" type="stmt"/>
+        <line num="17" count="10" type="stmt"/>
+        <line num="20" count="1" type="stmt"/>
+        <line num="26" count="1" type="stmt"/>
+        <line num="33" count="1" type="stmt"/>
+      </file>
+      <file name="styles.ts" path="/Users/victorsoares/Documents/github/pessoal/react-native-testing/src/components/Counter/styles.ts">
+        <metrics statements="9" coveredstatements="9" conditionals="0" coveredconditionals="0" methods="4" coveredmethods="4"/>
+        <line num="5" count="2" type="stmt"/>
+        <line num="7" count="2" type="stmt"/>
+        <line num="14" count="2" type="stmt"/>
+        <line num="15" count="30" type="stmt"/>
+        <line num="16" count="30" type="stmt"/>
+        <line num="23" count="2" type="stmt"/>
+        <line num="24" count="30" type="stmt"/>
+        <line num="30" count="2" type="stmt"/>
+        <line num="33" count="10" type="stmt"/>
+      </file>
+    </package>
+    <package name="react-native-testing.src.components.GithubMessage">
+      <metrics statements="10" coveredstatements="10" conditionals="2" coveredconditionals="2" methods="5" coveredmethods="5"/>
+      <file name="index.tsx" path="/Users/victorsoares/Documents/github/pessoal/react-native-testing/src/components/GithubMessage/index.tsx">
+        <metrics statements="7" coveredstatements="7" conditionals="2" coveredconditionals="2" methods="4" coveredmethods="4"/>
+        <line num="8" count="2" type="stmt"/>
+        <line num="9" count="8" type="stmt"/>
+        <line num="10" count="7" type="stmt"/>
+        <line num="11" count="5" type="stmt"/>
+        <line num="13" count="5" type="stmt"/>
+        <line num="14" count="2" type="stmt"/>
+        <line num="16" count="5" type="stmt"/>
+      </file>
+      <file name="styles.ts" path="/Users/victorsoares/Documents/github/pessoal/react-native-testing/src/components/GithubMessage/styles.ts">
+        <metrics statements="3" coveredstatements="3" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
+        <line num="5" count="2" type="stmt"/>
+        <line num="7" count="2" type="stmt"/>
+        <line num="9" count="5" type="stmt"/>
+      </file>
+    </package>
+    <package name="react-native-testing.src.components.HelloWorld">
+      <metrics statements="5" coveredstatements="5" conditionals="0" coveredconditionals="0" methods="2" coveredmethods="2"/>
+      <file name="index.tsx" path="/Users/victorsoares/Documents/github/pessoal/react-native-testing/src/components/HelloWorld/index.tsx">
+        <metrics statements="2" coveredstatements="2" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
+        <line num="5" count="2" type="stmt"/>
+        <line num="6" count="2" type="stmt"/>
+      </file>
+      <file name="styles.ts" path="/Users/victorsoares/Documents/github/pessoal/react-native-testing/src/components/HelloWorld/styles.ts">
+        <metrics statements="3" coveredstatements="3" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
+        <line num="5" count="2" type="stmt"/>
+        <line num="7" count="2" type="stmt"/>
+        <line num="10" count="2" type="stmt"/>
+      </file>
+    </package>
+    <package name="react-native-testing.src.mocks">
+      <metrics statements="4" coveredstatements="4" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
+      <file name="github.mock.ts" path="/Users/victorsoares/Documents/github/pessoal/react-native-testing/src/mocks/github.mock.ts">
+        <metrics statements="1" coveredstatements="1" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
+        <line num="1" count="5" type="stmt"/>
+      </file>
+      <file name="handlers.ts" path="/Users/victorsoares/Documents/github/pessoal/react-native-testing/src/mocks/handlers.ts">
+        <metrics statements="2" coveredstatements="2" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
+        <line num="4" count="5" type="stmt"/>
+        <line num="6" count="3" type="stmt"/>
+      </file>
+      <file name="server.ts" path="/Users/victorsoares/Documents/github/pessoal/react-native-testing/src/mocks/server.ts">
+        <metrics statements="1" coveredstatements="1" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
+        <line num="4" count="5" type="stmt"/>
+      </file>
+    </package>
+    <package name="react-native-testing.src.redux">
+      <metrics statements="4" coveredstatements="4" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
+      <file name="hooks.ts" path="/Users/victorsoares/Documents/github/pessoal/react-native-testing/src/redux/hooks.ts">
+        <metrics statements="2" coveredstatements="2" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
+        <line num="5" count="15" type="stmt"/>
+        <line num="6" count="3" type="stmt"/>
+      </file>
+      <file name="store.ts" path="/Users/victorsoares/Documents/github/pessoal/react-native-testing/src/redux/store.ts">
+        <metrics statements="2" coveredstatements="2" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
+        <line num="10" count="5" type="stmt"/>
+        <line num="14" count="5" type="stmt"/>
+      </file>
+    </package>
+    <package name="react-native-testing.src.redux.Counter">
+      <metrics statements="23" coveredstatements="23" conditionals="1" coveredconditionals="0" methods="13" coveredmethods="13"/>
+      <file name="counter.actions.ts" path="/Users/victorsoares/Documents/github/pessoal/react-native-testing/src/redux/Counter/counter.actions.ts">
+        <metrics statements="6" coveredstatements="6" conditionals="0" coveredconditionals="0" methods="2" coveredmethods="2"/>
+        <line num="4" count="5" type="stmt"/>
+        <line num="7" count="2" type="stmt"/>
+        <line num="8" count="2" type="stmt"/>
+        <line num="12" count="5" type="stmt"/>
+        <line num="15" count="3" type="stmt"/>
+        <line num="16" count="2" type="stmt"/>
+      </file>
+      <file name="counter.api.ts" path="/Users/victorsoares/Documents/github/pessoal/react-native-testing/src/redux/Counter/counter.api.ts">
+        <metrics statements="5" coveredstatements="5" conditionals="1" coveredconditionals="0" methods="4" coveredmethods="4"/>
+        <line num="5" count="2" type="stmt"/>
+        <line num="6" count="2" type="stmt"/>
+        <line num="11" count="3" type="stmt"/>
+        <line num="16" count="3" type="stmt"/>
+        <line num="17" count="3" type="stmt"/>
+      </file>
+      <file name="counter.slice.ts" path="/Users/victorsoares/Documents/github/pessoal/react-native-testing/src/redux/Counter/counter.slice.ts">
+        <metrics statements="12" coveredstatements="12" conditionals="0" coveredconditionals="0" methods="7" coveredmethods="7"/>
+        <line num="7" count="5" type="stmt"/>
+        <line num="13" count="5" type="stmt"/>
+        <line num="17" count="5" type="stmt"/>
+        <line num="19" count="2" type="stmt"/>
+        <line num="22" count="2" type="stmt"/>
+        <line num="26" count="5" type="stmt"/>
+        <line num="28" count="5" type="stmt"/>
+        <line num="31" count="2" type="stmt"/>
+        <line num="32" count="2" type="stmt"/>
+        <line num="35" count="2" type="stmt"/>
+        <line num="36" count="2" type="stmt"/>
+        <line num="41" count="5" type="stmt"/>
+      </file>
+    </package>
+    <package name="react-native-testing.src.screens.Home">
+      <metrics statements="6" coveredstatements="6" conditionals="0" coveredconditionals="0" methods="3" coveredmethods="3"/>
+      <file name="index.tsx" path="/Users/victorsoares/Documents/github/pessoal/react-native-testing/src/screens/Home/index.tsx">
+        <metrics statements="2" coveredstatements="2" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
+        <line num="25" count="1" type="stmt"/>
+        <line num="26" count="1" type="stmt"/>
+      </file>
+      <file name="styles.ts" path="/Users/victorsoares/Documents/github/pessoal/react-native-testing/src/screens/Home/styles.ts">
+        <metrics statements="4" coveredstatements="4" conditionals="0" coveredconditionals="0" methods="2" coveredmethods="2"/>
+        <line num="5" count="1" type="stmt"/>
+        <line num="10" count="1" type="stmt"/>
+        <line num="13" count="1" type="stmt"/>
+        <line num="15" count="1" type="stmt"/>
+      </file>
+    </package>
+    <package name="react-native-testing.src.services">
+      <metrics statements="1" coveredstatements="1" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
+      <file name="api.ts" path="/Users/victorsoares/Documents/github/pessoal/react-native-testing/src/services/api.ts">
+        <metrics statements="1" coveredstatements="1" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
+        <line num="3" count="5" type="stmt"/>
+      </file>
+    </package>
+    <package name="react-native-testing.src.styles.themes">
+      <metrics statements="1" coveredstatements="1" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
+      <file name="light.ts" path="/Users/victorsoares/Documents/github/pessoal/react-native-testing/src/styles/themes/light.ts">
+        <metrics statements="1" coveredstatements="1" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
+        <line num="1" count="4" type="stmt"/>
+      </file>
+    </package>
+    <package name="react-native-testing.src.utils">
+      <metrics statements="12" coveredstatements="7" conditionals="5" coveredconditionals="1" methods="5" coveredmethods="2"/>
+      <file name="test.utils.tsx" path="/Users/victorsoares/Documents/github/pessoal/react-native-testing/src/utils/test.utils.tsx">
+        <metrics statements="12" coveredstatements="7" conditionals="5" coveredconditionals="1" methods="5" coveredmethods="2"/>
+        <line num="14" count="7" type="stmt"/>
+        <line num="16" count="7" type="stmt"/>
+        <line num="22" count="7" type="stmt"/>
+        <line num="23" count="7" type="stmt"/>
+        <line num="27" count="7" type="stmt"/>
+        <line num="34" count="4" type="stmt"/>
+        <line num="36" count="4" type="cond" truecount="0" falsecount="1"/>
+        <line num="40" count="0" type="stmt"/>
+        <line num="45" count="0" type="stmt"/>
+        <line num="52" count="0" type="stmt"/>
+        <line num="54" count="0" type="stmt"/>
+        <line num="59" count="0" type="stmt"/>
+      </file>
+    </package>
+  </project>
+</coverage>
