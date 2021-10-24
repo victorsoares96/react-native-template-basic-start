@@ -1,4 +1,4 @@
-import React, { ComponentType, ReactNode } from 'react';
+import React, { ComponentType } from 'react';
 import { Provider } from 'react-redux';
 import { ThemeProvider } from 'styled-components/native';
 import { render as rtlRender } from '@testing-library/react-native';
@@ -47,14 +47,3 @@ export const renderWithNavigation = ({
       </Stack.Navigator>
     </NavigationContainer>,
   );
-
-export function RenderWithRedux(component: ReactNode, options: any = {}) {
-  const { initialState } = options;
-
-  const store = configureStore({
-    reducer: appReducer,
-    preloadedState: { ...initialState },
-  });
-
-  return <Provider store={store}>{component}</Provider>;
-}
