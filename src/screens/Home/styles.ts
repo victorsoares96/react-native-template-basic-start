@@ -1,14 +1,16 @@
-import { StyleSheet } from 'react-native';
+import styled from 'styled-components/native';
 
 import { Montserrat } from '../../assets/fonts';
 
-export const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    justifyContent: 'center',
-    alignItems: 'center',
-  },
-  text: {
-    fontFamily: Montserrat.Regular,
-  },
-});
+export const Container = styled.SafeAreaView`
+  flex: 1;
+  justify-content: center;
+  align-items: center;
+
+  background-color: ${props => props.theme.background};
+`;
+
+export const Text = styled.Text`
+  font-family: ${Montserrat.Regular};
+  color: ${props => props.theme.text.primary};
+`;

@@ -13,5 +13,11 @@ module.exports = {
       '<rootDir>/assetsTransformer.js',
     '\\.(css|less)$': '<rootDir>/assetsTransformer.js',
   },
+  reporters: [
+    "default",
+    ["./node_modules/jest-html-reporter", {
+      "pageTitle": "Test Report"
+    }]
+  ],
   transform: {},
 }

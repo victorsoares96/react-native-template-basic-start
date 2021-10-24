@@ -1,0 +1,26 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Testing HelloWorld component should render the component 1`] = `
+<View
+  style={
+    Array [
+      Object {},
+    ]
+  }
+>
+  <Text
+    style={
+      Array [
+        Object {
+          "color": "rgba(0, 0, 0, 0.6)",
+          "fontFamily": "Montserrat-Regular",
+          "fontSize": 24,
+          "textAlign": "center",
+        },
+      ]
+    }
+  >
+    Hello World
+  </Text>
+</View>
+`;

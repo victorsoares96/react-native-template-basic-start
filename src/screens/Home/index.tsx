@@ -1,6 +1,5 @@
 /* eslint-disable import/no-cycle */
 import React from 'react';
-import { SafeAreaView, Text } from 'react-native';
 import { StackNavigationProp } from '@react-navigation/stack';
 import { RouteProp } from '@react-navigation/native';
 import { EScreens } from 'utils/enums/e-screens';
@@ -8,9 +7,9 @@ import { EScreens } from 'utils/enums/e-screens';
 import { RootStackParamList } from '../../routes';
 import { GithubMessage } from '../../components/GithubMessage';
 
-import { HelloWorld } from '../../components';
+import { HelloWorld, Counter } from '../../components';
 
-import { styles } from './styles';
+import { Container, Text } from './styles';
 
 type HomeScreenNavigationProp = StackNavigationProp<
   RootStackParamList,
@@ -19,16 +18,17 @@ type HomeScreenNavigationProp = StackNavigationProp<
 type HomeScreenRouteProp = RouteProp<RootStackParamList, EScreens.Home>;
 
 type Props = {
-  route: HomeScreenRouteProp;
-  navigation: HomeScreenNavigationProp;
+  route?: HomeScreenRouteProp;
+  navigation?: HomeScreenNavigationProp;
 };
 
 export const Home: React.FC<Props> = () => {
   return (
-    <SafeAreaView style={styles.container}>
-      <Text style={styles.text}>Welcome to Home Screen!</Text>
+    <Container>
+      <Text>Welcome to Home Screen!</Text>
       <GithubMessage />
       <HelloWorld />
-    </SafeAreaView>
+      <Counter />
+    </Container>
   );
 };
