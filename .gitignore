@@ -66,4 +66,5 @@ buck-out/
 
 # Jest
 test-report.html
+coverage/*
 
