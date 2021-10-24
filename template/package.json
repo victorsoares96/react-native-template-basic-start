@@ -4,8 +4,12 @@
   "private": true,
   "scripts": {
     "android": "react-native run-android",
+    "android:debug": "",
+    "android:release": "",
     "android-clean": "scripts/clean_android.sh",
     "ios": "react-native run-ios",
+    "ios:debug": "",
+    "ios:release": "",
     "ios-clean": "scripts/clean_ios.sh",
     "start": "node node_modules/react-native/local-cli/cli.js start",
     "test": "jest --watchAll",
