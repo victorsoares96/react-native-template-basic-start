@@ -1,6 +1,6 @@
 {
-  "name": "project_name",
-  "version": "0.0.1",
+  "name": "ProjectName",
+  "version": "1.0.0",
   "private": true,
   "scripts": {
     "android": "react-native run-android",
@@ -8,7 +8,7 @@
     "ios": "react-native run-ios",
     "ios-clean": "scripts/clean_ios.sh",
     "start": "node node_modules/react-native/local-cli/cli.js start",
-    "test": "jest --watch",
+    "test": "jest --watchAll",
     "test:clearCache": "jest --clearCache",
     "test:coverage": "jest --coverage",
     "test:watch": "jest --watchAll",

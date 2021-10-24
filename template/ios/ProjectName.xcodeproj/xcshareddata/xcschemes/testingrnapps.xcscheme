@@ -15,9 +15,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "13B07F861A680F5B00A75B9A"
-               BuildableName = "testingrnapps.app"
-               BlueprintName = "testingrnapps"
-               ReferencedContainer = "container:testingrnapps.xcodeproj">
+               BuildableName = "projectname.app"
+               BlueprintName = "projectname"
+               ReferencedContainer = "container:projectname.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -33,9 +33,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "00E356ED1AD99517003FC87E"
-               BuildableName = "testingrnappsTests.xctest"
-               BlueprintName = "testingrnappsTests"
-               ReferencedContainer = "container:testingrnapps.xcodeproj">
+               BuildableName = "projectnameTests.xctest"
+               BlueprintName = "projectnameTests"
+               ReferencedContainer = "container:projectname.xcodeproj">
             </BuildableReference>
          </TestableReference>
       </Testables>
@@ -55,9 +55,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "13B07F861A680F5B00A75B9A"
-            BuildableName = "testingrnapps.app"
-            BlueprintName = "testingrnapps"
-            ReferencedContainer = "container:testingrnapps.xcodeproj">
+            BuildableName = "projectname.app"
+            BlueprintName = "projectname"
+            ReferencedContainer = "container:projectname.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </LaunchAction>
@@ -72,9 +72,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "13B07F861A680F5B00A75B9A"
-            BuildableName = "testingrnapps.app"
-            BlueprintName = "testingrnapps"
-            ReferencedContainer = "container:testingrnapps.xcodeproj">
+            BuildableName = "projectname.app"
+            BlueprintName = "projectname"
+            ReferencedContainer = "container:projectname.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </ProfileAction>

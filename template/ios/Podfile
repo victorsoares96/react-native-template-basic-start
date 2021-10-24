@@ -3,14 +3,14 @@ require_relative '../node_modules/react-native/scripts/react_native_pods'
 
 platform :ios, '11.0'
 
-target 'testingrnapps' do
+target 'projectname' do
   config = use_native_modules!
   use_react_native!(
     :path => config[:reactNativePath],
     # to enable hermes on iOS, change `false` to `true` and then install pods
     :hermes_enabled => false
   )
-  target 'testingrnappsTests' do
+  target 'projectnameTests' do
     inherit! :complete
     # Pods for testing
   end
