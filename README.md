@@ -124,8 +124,8 @@ basic-start
 │   │   │   │── styles.ts
 │   │   │   └── Home.test.tsx
 │   │   └── index.ts
-│   ├── services/
-│   │   └── api.ts
+│   ├── config/
+│   │   └── axios.ts
 │   ├── styles/
 │   │   │── themes/
 │   │   │   │── dark.ts
@@ -179,39 +179,61 @@ Nesta seção haverão instruções caso você queira editar o template, explica
 
 - **src** - Diretório contendo todos os arquivos da aplicação, é criado um diretório `src` para que o código da aplicação possa ser isolado em um diretório e facilmente portado para outros projetos, se necessário;
 
-  - **config** - Diretório para guardar os arquivos de configuração da aplicação, por exemplo, a configuração de uso do Reactotron e configuração de inicialização do Firebase;
+  - **config** - Diretório para guardar os arquivos de configuração da aplicação;
 
-    - **ReactotronConfig.js** - Arquivo contendo a configuração do Reactotron para ser usado na aplicação;
+    - **axios.ts** - Arquivo contendo a configuração do Axios para ser usado na aplicação;
 
-  - **images** - Diretório para armazenar imagens em geral que possam ser utilizadas na aplicação, esse diretório pode ser renomeado para `assets` e dentro de `assets` criar um novo diretório para guardar somente as imagens, assim é possível ter um diretório para guardar todo tipo de arquivo, e não apenas imagens;
+  - **assets** - Diretório para armazenar assets em geral que possam ser utilizadas na aplicação, esse diretório pode ser usado para guardar todo tipo de arquivo da aplicação, como imagens e fontes;
+  
+  - **components** - Diretório onde ficam os componentes da aplicação, como forma de padronização e boas práticas todo componente fica dentro de um diretório com seu nome;
+    - **HelloWorld** - Diretório exemplo de um componente cujo nome é **HelloWorld**, por padrão foi adotado usar sempre como nome do diretório o nome da página em camelCase, dentro desse diretório é necessária a criação ao menos do arquivo `index.tsx`;
+      - **index.tsx** - Arquivo com toda a lógica do componente, tal como os componentes visuais a serem renderizados;
+      - **styles.ts** - Arquivo com toda a estilização do componente;
+      - **HelloWorld.test.tsx** - Arquivo com os testes unitários do componente;
 
-  - **pages** - Diretório onde ficam as páginas (telas) da aplicação, como forma de padronização e boas práticas toda página fica dentro de um diretório com seu nome;
+  - **screens** - Diretório onde ficam as telas (páginas) da aplicação, como forma de padronização e boas práticas toda página fica dentro de um diretório com seu nome;
+    - **Home** - Diretório exemplo de uma página cujo nome é **Home**, por padrão foi adotado usar sempre como nome do diretório o nome da página em camelCase, dentro desse diretório é necessária a criação ao menos do arquivo `index.tsx`;
+      - **index.tsx** - Arquivo com toda a lógica da tela, tal como os componentes visuais a serem renderizados;
+      - **styles.ts** - Arquivo com toda a estilização da tela;
+      - **Home.test.tsx** - Arquivo com os testes unitários da tela;
+  
+  - **mocks** - Diretório onde será criados os arquivos os objetos simulados, estes objetos são utilizados mais em testes unitários com o objetivo de testar o comportamento de outros objetos.
+    - **github.mock.ts** - Arquivo mock de exemplo.;
+    - **handlers.ts** - Arquivo com rotas que serão simuladas pela api simulada.;
+    - **server.ts** - Arquivo com a configuração da api simulada.;
+  
+  - **redux** - Diretório onde serão criados os `reducers` que serão combinados dentro do gerenciador de estado _Redux_;
+    - **Counter** - Exemplo de diretório de um `reducer` criado.;
+      - **counter.actions.ts** - Arquivo com as `actions` provenientes deste `reducer` criado
+      - **counter.api.ts** - Arquivo com os serviços http relacionados a este `reducer`
+      - **counter.slice.ts** - Arquivo principal onde se concentra a lógica do `reducer`
+      - **types.ts** - Arquivo onde se concentra toda a tipagem `interface`/`type` relacionados a este `reducer`
+    - **hooks.ts** - Arquivos onde estão localizados os hooks relacionados ao `redux`
+    - **store.ts** - Arquivo raiz onde todos os `reducers` são combinados em um só
 
-    - **Main** - Diretório exemplo de uma página cujo nome é **Main**, por padrão foi adotado usar sempre como nome do diretório o nome da página em camelCase, dentro desse diretório é necessária a criação ao menos do arquivo `index.js`;
+  - **styles** - Diretório responsável por centralizar a lógica dos estilos da aplicação.
+    - **themes** - Diretório responsável por centralizar a lógica dos temas da aplicação.
+      - **dark.ts** - Arquivo com a paleta de cores do tema _Dark_
+      - **light.ts** - Arquivo com a paleta de cores do tema _Light_
+    - **styled.d.ts** - Tipagem do tema padrão do _Styled Components_
 
-      - **index.js** - Arquivo com toda a lógica da página, tal como os componentes visuais a serem renderizados;
+  - **utils** - Diretório responsável por centralizar os utilitários da aplicação.
+    - **enums** - Diretório responsável por centralizar os enumeradores da aplicação.
+      - **e-screens.ts** - Enumerador das telas da aplicação.
+    - **test.utils.tsx** - Arquivo com os utilitários para os testes unitários
 
-  - **services** - Diretório onde serão criados os arquivos relacionados a serviços utilizados na aplicação, por exemplo, requisições HTTP, autenticação com Firebase ou qualquer outro serviço que for utilizado;
+  - **App.tsx** - Arquivo responsável por centralizar o código do diretório `src`, nele são chamadas as rotas tal como qualquer outra configuração que precise ser executada na inicialização da aplicação, ele é como um _Entry Point_ do diretório `src`;
 
-    - **api.js** - Arquivo com a configuração da biblioteca Axios para envio de requisições HTTP, o endereço que vem configurado por padrão é para a API do Github;
+  - **Routes** - Diretório com as configurações de navegação da aplicação, nele são criados os Navigators disponibilizados na biblioteca React Navigation;
+    - **index.tsx** - Arquivo com as configurações de entrada de navegação da aplicação;
 
-  - **index.js** - Arquivo responsável por centralizar o código do diretório `src`, nele são chamadas as rotas tal como qualquer outra configuração que precise ser executada na inicialização da aplicação, ele é como um _Entry Point_ do diretório `src`;
-
-  - **routes.js** - Arquivo com as configurações de navegação da aplicação, nele são criados os Navigators disponibilizados na biblioteca React Navigation;
-
-- **.editorconfig** - Arquivo destinado à configuração do plugin Editor Config, que padroniza algumas configurações para o editor em diferentes ambientes;
-
-- **.eslintrc.json** - Arquivo de configuração do ESLint, é nele que são inseridas as regras e configurações de Linting do projeto, tal como a configuração do Resolver para o Babel Plugin Root Import e configuração da variável global `__DEV__`;
+- **.eslintrc.json** - Arquivo de configuração do ESLint, é nele que são inseridas as regras e configurações de Linting do projeto;
+  
+- **.eslintignore** - Arquivo com a listagem de diretórios/arquivos que devem ser ignorados pelo ESLint;
 
 - **babel.config.js** - Arquivo de configuração do Babel, é nele que é configurado o Babel Plugin Root Import para aceitar imports absolutos na aplicação usando o diretório `src` como raiz;
 
-- **dependencies.json** - Arquivo contendo apenas um objeto com a lista de dependências que devem ser instaladas na aplicação, vale lembrar que as dependências que já vem por padrão no projeto como `react` e `react-native` não precisam estar nessa lista, a menos que você queira gerenciar a versão dessas libs;
-
-- **devDependencies.json** - Arquivo contendo apenas um objeto com a lista de dependências de desenvolvimento que devem ser instaladas na aplicação, vale lembrar que as dependências de desenvolvimento que já vem por padrão no projeto como `@babel/core`, `@babel/runtime`, entre outras, não precisam estar nessa lista, a menos que você queira gerenciar a versão dessas libs;
-
-- **index.js** - Arquivo raiz da aplicação, também chamado de _Entry Point_, é o primeiro arquivo chamado no momento do build e execução da aplicação, nele é chamado o arquivo `src/index.js` que por sua vez chama as rotas da aplicação;
-
-- **jsconfig.json** - Arquivo de configuração do JavaScript no Editor, ele é o responsável por ativar o Auto Complete de códigos JavaScript na aplicação;
+- **index.js** - Arquivo raiz da aplicação, também chamado de _Entry Point_, é o primeiro arquivo chamado no momento do build e execução da aplicação, nele é chamado o arquivo `src/App.tsx` que por sua vez chama as rotas da aplicação;
 
 - **package.json** - Diferente dos projetos comuns, esse arquivo tem as configurações necessárias para a publicação do Template no NPM, para saber mais sobre isso veja a seção abaixo.
 

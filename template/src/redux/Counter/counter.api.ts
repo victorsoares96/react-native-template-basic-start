@@ -1,4 +1,4 @@
-import { api } from '../../services/api';
+import { api } from '../../config/axios';
 
 // A mock function to mimic making an async request for data
 export function fetchCount(amount = 1) {
