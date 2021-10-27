@@ -1,11 +1,5 @@
 <!-- PROJECT SHIELDS -->
 
-[![npm](https://img.shields.io/npm/v/react-native-template-rocketseat-basic.svg?label=npm%20package)](https://www.npmjs.com/package/react-native-template-rocketseat-basic)
-[![npm](https://img.shields.io/npm/dt/react-native-template-rocketseat-basic.svg)](https://www.npmjs.com/package/react-native-template-rocketseat-basic)
-[![GitHub issues](https://img.shields.io/github/issues-raw/rocketseat/react-native-template-rocketseat-basic.svg)](https://github.com/Rocketseat/react-native-template-rocketseat-basic/issues)
-[![GitHub last commit](https://img.shields.io/github/last-commit/rocketseat/react-native-template-rocketseat-basic.svg)](https://github.com/Rocketseat/react-native-template-rocketseat-basic/commits/master)
-[![NPM](https://img.shields.io/npm/l/react-native-template-rocketseat-basic.svg)](https://choosealicense.com/licenses/mit)
-
 <!-- PROJECT LOGO -->
 <br />
 <p align="center">
@@ -28,7 +22,6 @@
   - [Estrutura de Arquivos](#estrutura-de-arquivos)
   - [Instalação](#instalação)
   - [Edição](#edição)
-  - [Publicação](#publicação)
 - [Contribuição](#contribuição)
 - [Licença](#licença)
 - [Valeu](#valeu)
@@ -81,7 +74,7 @@ Antes de seguirmos para as configurações e uso do template, é ideal que você
 A estrutura de arquivos está da seguinte maneira:
 
 ```bash
-basic-start
+MyApp
 ├── scripts/
 │   │── clean_android.sh
 │   └── clean_ios.sh
@@ -236,29 +229,6 @@ Nesta seção haverão instruções caso você queira editar o template, explica
 - **index.js** - Arquivo raiz da aplicação, também chamado de _Entry Point_, é o primeiro arquivo chamado no momento do build e execução da aplicação, nele é chamado o arquivo `src/App.tsx` que por sua vez chama as rotas da aplicação;
 
 - **package.json** - Diferente dos projetos comuns, esse arquivo tem as configurações necessárias para a publicação do Template no NPM, para saber mais sobre isso veja a seção abaixo.
-
-### Publicação
-
-Para publicar um template como esse, o processo é bastante simples e rápido.
-
-1. Crie uma conta no [site do NPM](https://www.npmjs.com/);
-
-2. Com a conta criada execute o comando abaixo e insira suas credenciais;
-
-```sh
-npm login
-```
-
-3. Basta abrir o arquivo `package.json` e modificar as informações de acordo com o seu template, mas as informações mais importantes são duas, o `name` e o `version`, que são os únicos que tem restrições, seguem abaixo as restrições:
-
-   1. O `name` sempre deve começar com o prefixo `react-native-template-` seguido do nome do seu template;
-   2. O template deve ser publicado em uma conta pessoal, pois quando publicado em uma **Organization** é acrescentado o prefixo `@<nome_da_organization>` no nome do pacote;
-   3. O `name` deve ser único, não podendo ser igual ao de um template já publicado;
-   4. A `version` deve ser atualizada a cada publicação, se o template está na versão **0.0.1** e é preciso publicar uma atualização no mesmo, a `version` deve ser diferente e superior a versão atual, por exemplo, **0.0.2**;
-
-4. Após configurar corretamente o `package.json` basta executar no terminal/prompt o comando `npm publish`;
-
-5. Com a publicação finalizada o template deve ficar disponível através do link `https://www.npmjs.com/package/react-native-template-<nome_do_template>`.
 
 <!-- CONTRIBUTING -->
 
